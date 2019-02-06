@@ -46,7 +46,6 @@ function createClient(port, host, opts, connectionListener) {
 
     let socket = net.createConnection(port, host, () => {
         socket.setTimeout(0);
-        client.connect(connectionListener);
     });
 
     socket.setTimeout(20000);
